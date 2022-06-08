@@ -6,10 +6,10 @@ ARG PORT=8000
 
 WORKDIR ${PROJECT_PATH}
 
-COPY . ${PROJECT_PATH}
-# COPY requirements.txt ${PROJECT_PATH}
-# COPY requirements.sh ${PROJECT_PATH}
-# COPY run-server.sh ${PROJECT_PATH}
+COPY apy.py ${PROJECT_PATH}
+COPY requirements.txt ${PROJECT_PATH}
+COPY requirements.sh ${PROJECT_PATH}
+COPY run-server.sh ${PROJECT_PATH}
 
 RUN sh requirements.sh ${STAGE}
 
