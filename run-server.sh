@@ -9,4 +9,4 @@ echo "\n\n\n pip freeze"
 pip freeze
 echo "\n\n\n runserver"
 
-python /app/api.py
+python /app/app/api.py
